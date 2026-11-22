@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html>
-<body style="background:#111; display:flex; flex-direction:column; gap:20px; align-items:center; justify-content:center; height:100vh; font-family:sans-serif;">
-    <a href="retrobrawl://reward?coins=500" style="padding:20px 30px; background:#4cd936; color:#fff; text-decoration:none; font-size:22px; font-weight:bold; border-radius:10px;">
-        Забрати 500 монет
-    </a>
-    <a href="retrobrawl://reward?coins=1000" style="padding:20px 30px; background:#ffcc00; color:#000; text-decoration:none; font-size:22px; font-weight:bold; border-radius:10px;">
-        Забрати 1000 монет
-    </a>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Retro Brawl UA — Подарунки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: #111;
+            font-family: 'Arial Black', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .btn {
+            width: 100%;
+            max-width: 300px;
+            padding: 16px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            border: 3px solid #000;
+            box-shadow: 0 4px 0 #000;
+        }
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #000;
+        }
+        .btn-green { background: #4cd936; color: #fff; text-shadow: 1px 1px 0 #000; }
+        .btn-gold { background: #ffcc00; color: #000; }
+    </style>
+</head>
+<body>
+    <a href="retrobrawl://reward?coins=500" class="btn btn-green">Забрати 500 монет</a>
+    <a href="retrobrawl://reward?coins=1000" class="btn btn-gold">Забрати 1000 монет</a>
 </body>
 </html>
